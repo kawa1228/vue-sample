@@ -12,6 +12,7 @@
     </ul>
     <GetRepository/>
     <Chap2/>
+    <Chap3/>
   </div>
 </template>
 
@@ -20,6 +21,7 @@ import HelloWorld from "./components/HelloWorld.vue";
 import CompChild from "./components/CompChild.vue";
 import GetRepository from "./components/GetRepository.vue";
 import Chap2 from "./components/Chap2.vue";
+import Chap3 from "./components/Chap3.vue";
 
 export default {
   name: "app",
@@ -27,7 +29,8 @@ export default {
     HelloWorld,
     CompChild,
     GetRepository,
-    Chap2
+    Chap2,
+    Chap3
   },
   data() {
     return {
