@@ -12,6 +12,7 @@
       {{ item.name }} {{ item.price }}円
     </li>
   </ul>
+  180 度は {{ 180 | radian | round }} ラジアンだよ
 </div>
 </template>
 
@@ -66,6 +67,16 @@ export default {
     // matchedで返ったデータをlimit件返す算出プロパティ
     limited: function() {
       return this.sorted.slice(0, this.limit);
+    }
+  },
+  filters: {
+    // 小数点以下を第2位に丸めるフィルタ
+    round: function(val) {
+      return Math.round(val * 100) / 100;
+    },
+    // 度からラジアンに変換するフィルタ
+    radian: function(val) {
+      return (val * Math.PI) / 180;
     }
   }
 };

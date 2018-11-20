@@ -1,6 +1,7 @@
 <!-- P133 ウォッチャ　-->
 <template>
   <div class="get-repository">
+    選択してね
     <select v-model="current">
       <option v-for="topic in topics" :key="topic.id" v-bind:value="topic.value">
         {{ topic.name }}
@@ -33,7 +34,6 @@ export default {
         .then(
           function(res) {
             this.list = res.data.items;
-            console.log(res);
           }.bind(this)
         );
     }
