@@ -11,6 +11,7 @@
       @attack="handleAttack"/>
     </ul>
     <GetRepository/>
+    <Chap2/>
   </div>
 </template>
 
@@ -18,13 +19,15 @@
 import HelloWorld from "./components/HelloWorld.vue";
 import CompChild from "./components/CompChild.vue";
 import GetRepository from "./components/GetRepository.vue";
+import Chap2 from "./components/Chap2.vue";
 
 export default {
   name: "app",
   components: {
     HelloWorld,
     CompChild,
-    GetRepository
+    GetRepository,
+    Chap2
   },
   data() {
     return {
