@@ -13,6 +13,7 @@
     <GetRepository/>
     <Chap2/>
     <Chap3/>
+    <NextTickDemo/>
   </div>
 </template>
 
@@ -22,6 +23,7 @@ import CompChild from "./components/CompChild.vue";
 import GetRepository from "./components/GetRepository.vue";
 import Chap2 from "./components/Chap2.vue";
 import Chap3 from "./components/Chap3.vue";
+import NextTickDemo from "./components/NextTickDemo.vue";
 
 export default {
   name: "app",
@@ -30,7 +32,8 @@ export default {
     CompChild,
     GetRepository,
     Chap2,
-    Chap3
+    Chap3,
+    NextTickDemo
   },
   data() {
     return {
